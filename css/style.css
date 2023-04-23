@@ -1,5 +1,5 @@
 /* font families */
-@font-face {
+@font-face{
     font-family: Roboto;
     src: url(/fonts/Roboto-Regular.ttf) format('truetype');
 }
@@ -8,147 +8,143 @@
   font-style: 'Roboto';
 }
 
-.container {
-    padding: 0 15%;
+section, header{
+    padding: 40px 15%;
 }
 
 .contain{
   padding: 30px 0;
 }
 
-.hero, .footer{
+header, .hero, footer{
   background-color: #1f2937;
-  color: white;
+  color: #f9faf8;
 }
 
-.header-logo{
+.navbar_logo{
   color: #f9faf8;
   font-size: 24px;
 }
 
-.header{
+.navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header_links {
+.navbar_links{
   display: flex;
   justify-content: space-between;
   gap: 15px;
 }
 
-.hero .main-text {
-  color: #f9faf8;
+.navbar_links a {
+  color: white;
+}
+
+.hero .text h1{
   font-size: 48px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
-.secondary-text, a{
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-.hero_box{
+.hero{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 
-.hero_box img {
-  width: 40%;
+.hero img{
+  width: 50%;
   height: auto;
 }
 
-button, .call-to-action{
+button, .call_to_action{
   background-color: #3882f6;
 }
 
-.call-to-action{
+.call_to_action{
   display: flex;
   justify-content: space-between;
   color: white;
   border-radius: 4px;
   margin: 30px 0;
+  padding: 30px;
 }
-.call-to-action button{
+
+.call_to_action button{
   border: 1px solid white;
-  height: 30px;
   align-self: center;
 }
 
 button{
   border: none;
-  padding: 5px 20px;
+  padding: 5px 10px;
+  height: 30px;
   border-radius: 3px;
   color: white;
 }
 
 .quote{
   background-color: #e5e7eb;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding: 70px auto;
 }
 
-.quote .text{
-  color: #1f2937;
+.quote p{
   font-size: 36px;
-  font-style: italic;
-  font-weight: light;
 }
 
-.quote .name{
-  font-weight: bolder;
-  text-align: right;
-}
-
-.random-contents{
-  text-align: center;
-  font-size: 25px;
-}
-
-.random-information{
+.features{
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-direction: column;
 }
 
-.random-information .info{
+.features h3{
+  align-self: center;
+  font-size: 30px;
+}
+
+.information{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
-.random-information .info img{
+.information .info img{
   border: 4px solid #3882f6;
   border-radius: 5px;
   width: 100px;
   height: auto;
 }
 
-.footer{
+.information .info{
+  justify-content: center;
+}
+
+footer{
   text-align: center;
   padding: 20px 0;
 }
 
 /* media queries */
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .container{
-    padding: 0 10%;
+    padding: 0 5%;
   }   
 }
 
-@media (max-width: 390px) {
-  .hero_box, .random-information{
+@media (max-width: 390px){
+  .hero, .information{
     flex-wrap: wrap;
     display: flex;
   }
 
-  .hero{
-    width: fit-content;
-  }
-  .hero_box .main-text{
-    font-size: xx-large;
-  }
-
-  .hero_box img{
+  .hero img{
     width: 100%;
     height: auto;
   }
